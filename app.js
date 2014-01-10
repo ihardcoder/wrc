@@ -8,8 +8,6 @@ var routes = require('./routes');
 var tv = require('./routes/tv');
 var client = require('./routes/client');
 
-
-
 var http = require('http');
 var path = require('path');
 

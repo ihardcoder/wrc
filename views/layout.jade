@@ -3,5 +3,14 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+    - var t = title
+    - if (t == 'home')
+        script(src="/javascripts/home.js")
+    - else if (t == 'tv') 
+        link(href="/stylesheets/video-js.css" rel="stylesheet")
+        script(src="/javascripts/video.js")
+    - else
+        script(src="/javascripts/client.js")
   body
     block content
