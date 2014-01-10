@@ -1,4 +1,4 @@
-OFC
+WRC
 ======
 
-webSocket 互动Demo
+websocket remote control 互动Demo
