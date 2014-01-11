@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+    button(id="play") 播放
+    button(id="pause") 暂停
+    br
+    br
+    button(id="gift1") 送礼物1
+    button(id="gift2") 送礼物2
+
+    script(src="/javascripts/client.js")
