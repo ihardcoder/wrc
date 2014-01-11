@@ -1,16 +1,17 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    head
+        title= title
 
-    - var t = title
-    - if (t == 'home')
-        script(src="/javascripts/home.js")
-    - else if (t == 'tv') 
-        link(href="/stylesheets/video-js.css" rel="stylesheet")
-        script(src="/javascripts/video.js")
-    - else
-        script(src="/javascripts/client.js")
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        
+        block headLink
+
+        block headScript
+
   body
     block content
+
+    script(src="/socket.io/socket.io.js")
+
+    block bodyScript

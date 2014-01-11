@@ -2,4 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  ul
+    li
+      a(href="/tv", target="_blank") 被控端
+
+    li
+      a(href="/client", target="_blank") 控制端
+
+block bodyScript
+  script(src="/javascripts/home.js")
