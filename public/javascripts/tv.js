@@ -1,6 +1,6 @@
 var myVideo = videojs("example_video_1");
 
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect('/');
 
 myVideo.play();
 
