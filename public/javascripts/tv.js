@@ -27,4 +27,9 @@ socket.on('video', function (data){
 //TODO 展现送礼样式
 socket.on('gift', function (data){
 	console.log("展现送礼物:",data);
+    if(data.id == 'gift1') {
+        document.getElementById('gift').innerHTML = '礼物一赠送';    
+    } else if(data.id = 'gift2') {
+        document.getElementById('gift').innerHTML = '礼物二赠送';    
+    }
 })

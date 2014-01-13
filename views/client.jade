@@ -1,13 +1,17 @@
 extends layout
 
-block content
+block headLink
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no")
+    
 
-    button(id="play") 播放
-    button(id="pause") 暂停
-    br
-    br
-    button(id="gift1") 送礼物1
-    button(id="gift2") 送礼物2
+block content
+    div(style="width:320px;")
+        button(id="play",style="width:100px;height:40px;margin-right:10px;") 播放
+        button(id="pause",style="width:100px;height:40px;margin-right:10px;") 暂停
+        br
+        br
+        button(id="gift1",style="width:100px;height:40px;margin-right:10px;") 送礼物1
+        button(id="gift2",style="width:100px;height:40px;margin-right:10px;") 送礼物2
 
 block bodyScript
     script(src="/javascripts/jquery-1.10.2.js")

@@ -1,13 +1,15 @@
 extends layout
 
 block headLink
-	link(href="/stylesheets/video-js.css" rel="stylesheet")
+    link(href="/stylesheets/video-js.css" rel="stylesheet")
 
 block content
-
-	video(id="example_video_1",class="video-js vjs-default-skin",controls="controls",preload="auto", width="640",height="264",poster="http://video-js.zencoder.com/oceans-clip.png",data-setup='{"example_option":true}')
-		source(src="http://video-demo.u.qiniudn.com/FpaSQmlaM-Il4GoMZXqr4lbI30dW", type='video/mp4')
+    video(id="example_video_1",class="video-js vjs-default-skin",controls="controls",preload="auto", width="640",height="264",poster="http://video-js.zencoder.com/oceans-clip.png",data-setup='{"example_option":true}')
+        source(src="http://video-demo.u.qiniudn.com/FpaSQmlaM-Il4GoMZXqr4lbI30dW", type='video/mp4')
+    br
+    br
+    div(id="gift") 礼物
 
 block bodyScript
-	script(src="/javascripts/video.js")
-	script(src="/javascripts/tv.js")
+    script(src="/javascripts/video.js")
+    script(src="/javascripts/tv.js")
